@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>Distribute Elements Horizontally</title>
+	<style>
+	.parent
+	{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.item
+	{
+		display: inline-block;
+		position: relative;
+		margin-right: -.25em;
+		
+		height: 20px;
+		width: 20px;
+		border-radius: 100%;
+		border: 1px solid #777;
+		background: #ddd;
+		cursor: pointer;
+	}
+	.item::before
+	{
+		content: '';
+	}
+	.item::after
+	{
+		content: '';
+	}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<span class="item"></span>
+		<span class="item"></span>
+		<span class="item"></span>
+		<span class="item"></span>
+		<span class="item"></span>
+		<span class="item"></span>
+	</div>
+</body>
